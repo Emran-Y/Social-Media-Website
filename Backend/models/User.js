@@ -23,7 +23,7 @@ const userSchema = mongoose.Schema({
         type:String,
         default:''
     },
-    profilePicture:{
+    backgroundPicture:{
         type:String,
         default:''
     },
