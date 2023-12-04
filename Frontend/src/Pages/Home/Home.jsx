@@ -6,14 +6,14 @@ import './home.css'
 
 function Home() {
   return (
-    <div>
+    <>
     <Topbar/>
       <div className="home-container">
         <Sidebar/>
         <Feed/>
         <Rightbar/>
       </div>
-    </div>
+    </>
   )
 }
 
