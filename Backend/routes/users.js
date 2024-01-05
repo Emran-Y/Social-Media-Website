@@ -29,10 +29,15 @@ router.put('/:id',async(req,res) => {
     }
 })
 // get a user
-router.get('/:id', async (req, res) => {
-    
+router.get('/', async (req, res) => {
+     
+    const userId = req.query.userId
+    const username = req.query.username
+
+    console.log(username)
+
     try {
-            const user = await User.findById(req.params.id);
+            const user = userId ? await User.findById(userId) : await User.findOne({username:username})
 
             if (!user) {
                 return res.status(400).json('User does not exist');

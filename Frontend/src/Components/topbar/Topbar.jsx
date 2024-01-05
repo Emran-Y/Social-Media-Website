@@ -3,14 +3,17 @@ import SearchIcon from '@mui/icons-material/Search'
 import PersonIcon from '@mui/icons-material/Person'
 import NotificationsIcon from '@mui/icons-material/Notifications'
 import ChatIcon from '@mui/icons-material/Chat'
-import personImage from '../../assets/person/1.jpeg'
+// import personImage from '../../assets/person/1.jpeg'
+import {Link} from 'react-router-dom'
 
 
 function Topbar() {
   return (
     <div className='topbarContainer'>
         <div className="topbarLeft">
-            <span className="logo">Connectify</span>
+            <Link to='/' style={{textDecoration:'none'}}>
+                <span className="logo">Connectify</span>
+            </Link>
         </div>
         <div className="topbarCenter">
             <div className="searchBar">
@@ -36,7 +39,7 @@ function Topbar() {
                     <NotificationsIcon/>
                     <span className="topbarIconBage">3</span>
                 </div>
-                <img src={personImage} alt="profile image" className="topbarImage" />
+                <img src='/assets/person/1.jpeg' alt="profile image" className="topbarImage" />
             </div>
         </div>
 

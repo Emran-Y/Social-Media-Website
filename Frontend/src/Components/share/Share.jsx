@@ -1,5 +1,5 @@
 import './share.css'
-import personImage from '../../assets/person/1.jpeg'
+// import personImage from '../../assets/person/1.jpeg'
 import PermMediaIcon from '@mui/icons-material/PermMedia'
 import LabelIcon from '@mui/icons-material/Label'
 import RoomIcon from '@mui/icons-material/Room'
@@ -9,7 +9,7 @@ export default function Share() {
     <div className='share'>
         <div className="shareWrapper">
             <div className="shareTop">
-                <img src={personImage} alt="" className='shareProfileImage' />
+                <img src='/assets/person/1.jpeg' alt="" className='shareProfileImage' />
                 <input 
                   placeholder='What is in your mind' 
                   type="text"  

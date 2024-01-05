@@ -7,10 +7,13 @@ const mongoose = require('mongoose')
 const userRoute = require('./routes/users')
 const authRoute = require('./routes/auth')
 const postRoute = require('./routes/posts')
+const cors = require('cors')
 
 
 dotenv.config()
 
+
+app.use(cors())
 app.use(express.json())
 app.use(helmet())
 app.use(morgan('common'))
