@@ -21,15 +21,12 @@ Connectify is a social media website developed using the MERN stack, enabling us
 - **Deployment:** Docker (optional), Heroku, or other hosting services
 - **Real-time Updates:** Socket.io (optional, for real-time notifications)
 
-
 ## Demo
 
 ### Homepage
 
 ![Homepage](https://github.com/Emran-Y/Social-Media-Website/blob/main/ScreenShots/Home.jpg)
 
-
 ### Profile Page
 
 ![Profile Page](https://github.com/Emran-Y/Social-Media-Website/blob/main/ScreenShots/profile.jpg)
-
